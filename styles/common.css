@@ -1,0 +1,107 @@
+main.codebook--main
+{
+    min-height: 80vh;
+}
+.best-seller-tag
+{
+    background-color: rgb(249 115 22);
+    color: #fff;
+    border-radius: 3px;
+    padding: 0.25rem 0.47rem;
+    width: fit-content;
+    position: absolute;
+}
+li.codebook--book-card
+{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: relative;
+    border-radius: 8px;
+}
+li.codebook--book-card img.product-img
+{
+    height: 270px;
+    width:100%;
+}
+.codebook--logo-container img{
+    height: 40px;
+    width: 40px;
+}
+div.codebook-icons-container span.codebook--icon
+{
+    font-size: 1.5rem;
+}
+.loading-spinner
+{
+    height: 5rem;
+    width: 5rem;
+}
+.loading-container
+{
+    min-height: 70vh;
+}
+div.codebook-global-search
+{
+    flex-grow: 0.7;
+}
+.codebook--logo-container>h3{
+    position: relative;
+    top:4px;
+}
+.codebook--toast
+{
+    height: 50px;
+    width:300px;
+    padding: 0.75rem;
+    color:#fff;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top:10px;
+    right:10px;
+    border-radius: 8px;
+}
+.toast-close
+{
+    font-size: 28px;
+    cursor: pointer;
+    position: relative;
+    bottom: 10px;
+}
+.codebook--toast.error
+{
+    background-color: red;
+}
+.codebook--toast.success
+{
+    background-color: green;
+}
+.codebook-minicart-container
+{
+    position: relative;
+    margin-right: 8px;
+}
+#minicart--count
+{
+    padding: 0.15rem 0.5rem; 
+    border-radius: 50%;
+    position: absolute;
+    left: 10px;
+    bottom: 18px;
+}
+@media screen and (max-width:678px){
+    header.codebook--header
+    {
+        position: relative;
+    }
+    .codebook-global-search
+    {
+        position: absolute;
+        bottom: -20px;
+        width:100%;
+    }
+    main.codebook--main
+    {
+        margin-top: 2rem;
+    }
+}

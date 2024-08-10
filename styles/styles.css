@@ -1,0 +1,68 @@
+section.codebook-about-section
+{
+    display: flex;
+    align-items: center;
+}
+div.codebook-info-container,div.codebook-banner-container
+{
+    flex-basis: 50%;
+}
+div.codebook-banner-container img{
+    width:100%;
+}
+div.codebook-review-card-1
+{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+div.codebook-review-card-2
+{
+    border-left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+img.img-icon
+{
+    height: 30px;
+}
+li.codebook-faq-list-item p.codebook-faq-question
+{
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+}
+li.codebook-faq-list-item p.codebook-faq-answer {
+    display: none;
+}
+li.codebook-faq-list-item.active p.codebook-faq-answer {
+  
+    display: block;
+}
+li.codebook-faq-list-item.active img.img-icon{
+    rotate: 180deg;
+}
+
+
+@media screen and (max-width:678px) {
+    section.codebook-about-section
+    {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+@media screen and (max-width:1024px) {
+    ul.codebook-featured-books-list
+    {
+        flex-direction: column;
+    }
+    .codebook-reviews-list{
+        flex-direction: column;
+    }
+    .codebook-reviews-list > div{
+        width: 100%;
+    }
+    div.codebook-review-card-2{
+        border-left: 1px solid #ccc;
+    }
+}
+

@@ -1,0 +1,71 @@
+main#codebook-login-main
+{
+    display: flex;
+    justify-content: center;
+}
+article.codebook-login-card
+{
+    border:1px solid #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 1.5rem;
+    flex-basis: 35%;
+    max-width: 35%;
+    height: max-content;
+}
+.form-group>*{
+    margin-top:0.5rem;
+}
+.form-action
+{
+    margin-top: 0.75rem;
+}
+div.form-login-info strong
+{
+    cursor: pointer;
+}
+.form-login-info p.login-helper
+{
+    display: block;
+}
+.form-login-info p.signup-helper
+{
+    display: none;
+}
+.form-login-info.signup-form p.login-helper
+{
+    display: none;
+}
+.form-login-info.signup-form p.signup-helper
+{
+    display: block;
+}
+input.form-control.error
+{
+    border: 2px solid red;
+}
+p.error-msg
+{
+    font-weight: bold;
+    color:red;
+    margin-top:0.5rem;
+    margin-bottom: 0.5rem;
+}
+.form-action button[type="button"]
+{
+    display: none;
+}
+.form-action.is-submitting button[type="submit"]
+{
+    display: none;
+}
+.form-action.is-submitting button[type="button"]
+{
+    display: block;
+}
+@media  screen and (max-width:678px) {
+    article.codebook-login-card
+    {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}

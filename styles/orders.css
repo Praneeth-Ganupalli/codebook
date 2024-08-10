@@ -1,0 +1,34 @@
+article.codebook-order-confirmation
+{
+    border: 1px solid #ccc ;  
+    display: flex;
+    flex-direction: column;
+    gap: 0.56rem;
+    padding: 1rem; 
+    align-items: center;
+}
+article.codebook-order-confirmation>p
+{
+    margin:0;
+}
+div.codebook-check-icon
+{
+    color:rgb(22 163 74);
+    font-size: 50px;
+}
+li.codebook-order-item
+{
+    border:1px solid #ccc;
+    padding: 0.5rem;
+}
+li.codebook-order-item-product-item div.product-img img
+{
+    width:128px;
+    height: 85px;
+}
+@media screen and (max-width:678px) {
+    #codebook-orders-list
+    {
+        padding-left:0
+    }
+}

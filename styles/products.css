@@ -1,0 +1,38 @@
+ul.codebook-products-list li.codebook--book-card
+{
+    flex-basis: 30%;
+    max-width: 30%;
+}
+li.codebook--book-card h4.product-title{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.codebook-filters-header h5{
+    font-size: 16px;
+}
+.codebook-filters-header button.filter-close-btn
+{
+    padding: 0.45rem 0.57rem;
+    font-size: 28px;
+}
+aside.codebook-filters-container
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 9999;
+    padding: 0.5rem 2rem;
+}
+@media screen and (max-width:678px) {
+    ul.codebook-products-list{
+        flex-direction: column;
+    }
+    ul.codebook-products-list li.codebook--book-card
+    {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
